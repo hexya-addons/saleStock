@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="invoice_form_inherit_sale_stock" model="AccountInvoice" >
+            <data>
+                <xpath expr="//page[@name='other_info']//field[@name='origin']" position="after">
+                <field name="incoterms_id" widget="selection" groups="sale.group_display_incoterm"/>
+                </xpath>
+            </data>
+        </view>
+    </data>
+</hexya>

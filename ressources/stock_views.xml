@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hexya>
+    <data>
+	<view id="stock_location_route_form_view_inherit_sale_stock" model="StockLocationRoute" >
+                <xpath expr="//field[@name='warehouse_ids']" position="after">
+                    <br/><field name="sale_selectable" string="Sale Order Lines"/>
+                </xpath>
+            </view>
+	<view id="view_stock_return_picking_form_inherit_sale_stock" model="StockReturnPicking" >
+                <field name="quantity" position="after">
+                    <field name="to_refund_so"/>
+                </field>
+            </view>
+    </data>
+</hexya>
